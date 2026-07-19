@@ -1,0 +1,15 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+int main()
+{
+    char s1[30]="Good ";
+    char s2[]="Morning";
+
+    strcat(s1,s2);
+
+    cout<<s1;
+
+    return 0;
+}
