@@ -1,18 +1,14 @@
 #include<iostream>
-#include<fstream>
+#include<string>
 using namespace std;
 
 int main()
 {
-    ifstream file("data.txt");
+    string name;
 
-    string line;
+    getline(cin,name);
 
-    getline(file,line);
-
-    cout<<line;
-
-    file.close();
+    cout<<name;
 
     return 0;
 }
