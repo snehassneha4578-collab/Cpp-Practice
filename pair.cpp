@@ -1,16 +1,45 @@
 #include<iostream>
-#include<utility>
 using namespace std;
 
 int main()
 {
-    pair<int,string> student;
+    int arr[7]={1,2,3,4,6,8,10};
 
-    student.first=101;
-    student.second="Sneha";
+    int target=10;
 
-    cout<<"Roll No = "<<student.first<<endl;
-    cout<<"Name = "<<student.second;
+    int left=0;
+    int right=6;
+
+    bool found=false;
+
+    while(left<right)
+    {
+        int sum=arr[left]+arr[right];
+
+        if(sum==target)
+        {
+            cout<<"Pair found: "
+                <<arr[left]<<" + "
+                <<arr[right]<<" = "
+                <<target;
+
+            found=true;
+            break;
+        }
+        else if(sum<target)
+        {
+            left++;
+        }
+        else
+        {
+            right--;
+        }
+    }
+
+    if(!found)
+    {
+        cout<<"Pair not found";
+    }
 
     return 0;
 }
