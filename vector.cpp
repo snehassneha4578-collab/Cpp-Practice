@@ -4,16 +4,22 @@ using namespace std;
 
 int main()
 {
-    vector<int> numbers;
+    int n;
 
-    numbers.push_back(10);
-    numbers.push_back(20);
-    numbers.push_back(30);
+    cin>>n;
 
-    for(int i=0;i<numbers.size();i++)
+    vector<int> arr(n);
+
+    for(int i=0;i<n;i++)
     {
-        cout<<numbers[i]<<" ";
+        cin>>arr[i];
+    }
+
+    for(int i=0;i<n;i++)
+    {
+        cout<<arr[i]<<" ";
     }
 
     return 0;
 }
+
