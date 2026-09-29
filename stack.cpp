@@ -10,7 +10,13 @@ int main()
     s.push(20);
     s.push(30);
 
-    cout<<"Top = "<<s.top();
+    cout<<"Top = "<<s.top()<<endl;
+
+    s.pop();
+
+    cout<<"Top after pop = "<<s.top()<<endl;
+
+    cout<<"Size = "<<s.size();
 
     return 0;
 }
